@@ -24,7 +24,7 @@ const setSuccess = element => {
     const errorDisplay = inputControl.querySelector('.error');
 
     errorDisplay.innerText = '';
-    inputControl.classList.add('Sukses');
+    inputControl.classList.add('success');
     inputControl.classList.remove('error');
 };
 
@@ -62,11 +62,19 @@ const validateInputs = () => {
     }
 
     if(password2Value === '') {
+       
         setError(password2, 'Ju lutem konfirmoni passwordin tuaj');
     } else if (password2Value !== passwordValue) {
         setError(password2, "Passwordat nuk jane te njejte!");
     } else {
         setSuccess(password2);
+       
+            alert("Ju keni krijuar llogarine!")
+          
     }
+  
+    
+  }
 
-};
+
+
