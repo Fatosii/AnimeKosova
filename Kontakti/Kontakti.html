@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontaktoni me ne</title>
-    <link rel="stylesheet" href="Kontakti.css">
-</head>
-<body>
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakti</title>
+    <link rel="stylesheet" href="Kontakti.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-        <form>
-<h1>Kontaktoni me ne</h1>
-<input type="text" id="emri" placeholder="Emri juaj" required>
-        </form>
+  <body>
+    <div class="contact-banner">
+      <h1>Na kontakto!</h1>
+  
+      <p class="contact-description">
+       Ju lutem plotsoni formen me posht
+      </p>
     </div>
-    
-</body>
+
+    <form name="contact-form">
+      <div class="form-control">
+        <label>Emri plote</label>
+        <input name="name"
+          placeholder="Emri dhe mbiemri" />
+        <div class="error hide">Emri eshte i nevojshem</div>
+      </div>
+
+      <div class="form-control">
+        <label>Email</label>
+        <input
+          name="email"
+          placeholder="p.shemaili_juaj@ubt-uni.net"
+        />
+        <div class="error hide">Ju lutem shtypni emailin </div>
+      </div>
+
+      <div class="form-control">
+        <label>Numri Telefonit</label>
+        <input name="teli"></input>
+        <div class="error hide">Shtypni numrin e telefonit</div>
+      </div>
+
+      <div class="form-control">
+        <label>Mesazhi juaj</label>
+        <textarea name="mesazhi"></textarea>
+        <div class="error hide">Shtypni mesazhin tuaj</div>
+      </div>
+
+      <hr />
+
+      <button type="submit" class="submitbtn">Dergo mesazhin</button>
+    </form>
+
+    <script src="kontakt.js"></script>
+  </body>
 </html>
